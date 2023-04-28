@@ -1,6 +1,7 @@
 .header {
     height: 80px;
-    background-color: #1C2B35;;
+    background-color: #1C2B35;
+    ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,11 +9,42 @@
     padding-right: 100px;
 }
 
-nav.header a{
+nav.header a {
     text-decoration: none;
     color: #FFFFFF;
     margin-left: 30px;
 }
-nav.header a:hover{
+
+nav.header a:hover {
     color: orange;
+}
+
+nav.header span {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+nav.header span:hover {
+    color: orange;
+}
+
+.power {
+    width: 20px;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
