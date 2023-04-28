@@ -11,6 +11,7 @@
 
 .form-control {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .form-title {
@@ -103,5 +104,10 @@ p a {
 
 .show-close {
     width: 20px;
-    margin-left: 3px;
+    position: absolute;
+    top: 70%;
+    left: 83%;
+    transform: translateY(-50%);
+    color: rgb(60, 59, 59);
+
 }

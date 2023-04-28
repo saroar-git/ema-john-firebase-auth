@@ -7,8 +7,9 @@ import { AuthContext } from "../providers/AuthProvider";
 const SignUp = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-  const [show, setShow] = useState(false);
-  const [show1, setShow1] = useState(false);
+
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
 
   const { createUser } = useContext(AuthContext);
 
@@ -55,13 +56,13 @@ const SignUp = () => {
         <div className="form-control">
           <label htmlFor="">Password</label>
           <input
-            type={show ? "text" : "password"}
+            type={showPassword ? "text" : "password"}
             name="password"
             placeholder="Password"
             required
           />
-          <span onClick={() => setShow(!show)}>
-            {show ? (
+          <span onClick={() => setShowPassword(!showPassword)}>
+            {showPassword ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -102,13 +103,13 @@ const SignUp = () => {
         <div className="form-control">
           <label htmlFor="">Confirm Password</label>
           <input
-            type={show1 ? "text" : "password"}
+            type={showConfirm ? "text" : "password"}
             name="confirm"
             placeholder="Confirm Password"
             required
           />
-          <span onClick={() => setShow1(!show)}>
-            {show1 ? (
+          <span onClick={() => setShowConfirm(!showConfirm)}>
+            {showConfirm ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
